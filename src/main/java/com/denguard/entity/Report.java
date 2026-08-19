@@ -26,10 +26,10 @@ public class Report {
     @Column(name = "report_image_url", nullable = false, length = 500)
     private String imageUrl;
 
-    @Column(name = "report_latitude", precision = 9, scale = 6)
+    @Column(name = "report_latitude", nullable = false, precision = 9, scale = 6)
     private BigDecimal latitude;
 
-    @Column(name = "report_longitude", precision = 9, scale = 6)
+    @Column(name = "report_longitude", nullable = false, precision = 9, scale = 6)
     private BigDecimal longitude;
 
     @Column(name = "report_address", length = 255)

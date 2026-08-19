@@ -18,14 +18,14 @@ public class RiskAnalysis {
     private String region;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "risk_analysis_risl_level", nullable = false, length = 20)
+    @Column(name = "risk_analysis_risk_level", nullable = false, length = 20)
     private RiskLevel riskLevel;
 
     @Column(name = "risk_analysis_score", nullable = false)
     private Integer score;
 
     @Column(name = "risk_analysis_analyzed_at", nullable = false)
-    private LocalDateTime analyzed_at;
+    private LocalDateTime analyzedAt;
 
     public RiskAnalysis() {}
 
@@ -61,11 +61,11 @@ public class RiskAnalysis {
         this.score = score;
     }
 
-    public LocalDateTime getAnalyzed_at() {
-        return analyzed_at;
+    public LocalDateTime getAnalyzedAt() {
+        return analyzedAt;
     }
 
-    public void setAnalyzed_at(LocalDateTime analyzed_at) {
-        this.analyzed_at = analyzed_at;
+    public void setAnalyzedAt(LocalDateTime analyzedAt) {
+        this.analyzedAt = analyzedAt;
     }
 }
